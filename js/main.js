@@ -8,8 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
       links.classList.toggle('open');
       const expanded = links.classList.contains('open');
       toggle.setAttribute('aria-expanded', expanded);
+      document.body.classList.toggle('menu-open', expanded);
     });
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }));
   }
 
   // Reveal on scroll
