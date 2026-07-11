@@ -10,6 +10,16 @@
 <style>
   .photo-frame{ border-radius:18px; overflow:hidden; border:1px solid var(--line); }
   .photo-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .infographic-frame{
+    border-radius:18px; overflow:hidden; border:1px solid var(--line);
+    background: var(--white); padding: 18px; display:flex; justify-content:center;
+  }
+  .infographic-frame img{ width:100%; max-width:900px; height:auto; display:block; margin:0 auto; object-fit:contain; }
+  .page-hero.route-hero{
+    background: linear-gradient(180deg, rgba(20,42,28,0.55) 0%, rgba(20,42,28,0.82) 65%, rgba(20,42,28,0.95) 100%),
+                url('../assets/images/projets/route/banner-hero.jpg');
+    background-size: cover; background-position: center 60%;
+  }
   .impact-chip-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
   @media (max-width:760px){ .impact-chip-grid{ grid-template-columns:1fr 1fr; } }
   .impact-chip{
@@ -43,7 +53,7 @@
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-hero route-hero">
   <svg class="contour-bg" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
     <path class="contour-line" d="M-50 350 Q 200 300 350 350 T 700 320 T 1250 360" stroke-opacity="0.3"/>
   </svg>
@@ -60,8 +70,12 @@
 
 <section style="padding-top:50px;">
   <div class="section-inner">
-    <div class="photo-frame reveal" style="height:420px;">
-      <img src="../assets/images/projets/route/photo1.jpg" alt="Paysage des Hauts Plateaux de Minembwe">
+    <div class="section-head reveal" style="margin-bottom:24px; text-align:center; margin-left:auto; margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Le projet en chiffres</div>
+      <h2>Une infographie complète du projet</h2>
+    </div>
+    <div class="infographic-frame reveal">
+      <img src="../assets/images/projets/route/photo1.jpg" alt="Infographie : le projet de désenclavement des Hauts Plateaux de Minembwe en chiffres">
     </div>
   </div>
 </section>
@@ -86,8 +100,8 @@
         <p style="color:var(--charcoal-60); font-size:16px;">Plusieurs centaines de milliers d'habitants vivent dans une région difficilement accessible où les conflits armés ont détruit des centaines de villages, des écoles, des centres de santé et les principales infrastructures économiques.</p>
         <p style="color:var(--charcoal-60); font-size:16px;">Sans route, il n'y a ni commerce, ni investissements, ni retour durable des populations déplacées.</p>
       </div>
-      <div class="photo-frame reveal" style="height:320px;">
-        <img src="../assets/images/projets/route/photo2.jpg" alt="Voie d'accès dans les Hauts Plateaux">
+      <div class="infographic-frame reveal">
+        <img src="../assets/images/projets/route/photo2.jpg" alt="Infographie : du conflit à la prospérité, avant et après le projet">
       </div>
     </div>
   </div>
@@ -113,8 +127,12 @@
 
 <section>
   <div class="section-inner">
-    <div class="photo-frame reveal" style="height:420px;">
-      <img src="../assets/images/projets/route/photo3.jpg" alt="Zone d'intervention du projet routier">
+    <div class="section-head reveal" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom:24px;">
+      <div class="eyebrow" style="justify-content:center;">De la construction à la paix durable</div>
+      <h2>Le chemin, étape par étape</h2>
+    </div>
+    <div class="infographic-frame reveal">
+      <img src="../assets/images/projets/route/photo3.jpg" alt="Infographie : le chemin vers la paix durable et le développement">
     </div>
   </div>
 </section>
