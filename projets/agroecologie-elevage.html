@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agroécologie et Élevage Résilient — Développement Communautaire | ODAPP</title>
+<meta name="description" content="Projet intégré agriculture-élevage pour la sécurité alimentaire et la résilience climatique au Sud-Kivu.">
+<link rel="icon" href="../assets/images/logo_emblem.png">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .comp-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .comp-grid{ grid-template-columns:1fr; } }
+  .comp-card{ background:var(--white); border:1px solid var(--line); border-radius:16px; padding:26px; }
+  .comp-card .n{ font-family:var(--font-mono); font-size:12px; color:var(--wheat); font-weight:600; margin-bottom:10px; display:block; }
+  .comp-card h3{ font-size:17px; color:var(--forest); margin-bottom:12px; }
+  .comp-card ul{ display:flex; flex-direction:column; gap:8px; }
+  .comp-card li{ font-size:13.5px; color:var(--charcoal-60); padding-left:16px; position:relative; }
+  .comp-card li::before{ content:'—'; position:absolute; left:0; color:var(--leaf); }
+  .loop-diagram{ display:flex; align-items:center; justify-content:center; gap:0; flex-wrap:wrap; }
+  .loop-node{ background:var(--forest); color:#fff; border-radius:14px; padding:20px 22px; text-align:center; width:150px; }
+  .loop-node span{ display:block; font-size:12.5px; color:rgba(255,255,255,0.7); margin-top:4px; }
+  .loop-arrow{ color:var(--wheat); font-size:24px; padding:0 14px; }
+  @media (max-width:760px){ .loop-arrow{ transform:rotate(90deg); padding:10px 0; } .loop-diagram{ flex-direction:column; } }
+  .result-strip{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  @media (max-width:760px){ .result-strip{ grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="nav-brand">
+      <img src="../assets/images/logo_emblem.png" alt="ODAPP">
+      <span class="nav-brand-text">ODAPP<span>Sud-Kivu, RDC</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Accueil</a>
+      <a href="../a-propos.html">À propos</a>
+      <a href="../projets.html" class="active">Projets</a>
+      <a href="../contact.html">Contact</a>
+      <a href="#don" class="nav-cta">Faire un don</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <svg class="contour-bg" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
+    <path class="contour-line" d="M-50 350 Q 200 300 350 350 T 700 320 T 1250 360" stroke-opacity="0.3"/>
+  </svg>
+  <div class="section-inner">
+    <div style="display:flex; gap:10px; margin-bottom:16px;">
+      <span class="parcel-tag tag-rapide">Projet intégré</span>
+      <a href="../projets.html" style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.6); align-self:center;">← Retour aux projets</a>
+    </div>
+    <h1>Agroécologie et élevage résilient pour le développement communautaire</h1>
+    <p>Un modèle intégré où les cultures nourrissent les animaux, et les animaux fertilisent les champs — pour une sécurité alimentaire durable au Sud-Kivu.</p>
+  </div>
+</section>
+
+<section style="padding-bottom:0;">
+  <div class="section-inner">
+    <div class="hero-stats" style="margin-top:0; background:var(--paper-dim); border-radius:18px;">
+      <div class="hero-stat" style="background:var(--white); border-right:1px solid var(--line);"><b style="color:var(--forest);">60 000 $</b><span style="color:var(--charcoal-60);">Budget total</span></div>
+      <div class="hero-stat" style="background:var(--white); border-right:1px solid var(--line);"><b style="color:var(--forest);">3 ans</b><span style="color:var(--charcoal-60);">Durée du projet</span></div>
+      <div class="hero-stat" style="background:var(--white); border-right:1px solid var(--line);"><b style="color:var(--forest);">500+</b><span style="color:var(--charcoal-60);">Ménages bénéficiaires</span></div>
+      <div class="hero-stat" style="background:var(--white);"><b style="color:var(--forest);">30-40%</b><span style="color:var(--charcoal-60);">Hausse de productivité visée</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="grid grid-2" style="gap:50px; align-items:center;">
+      <div class="reveal">
+        <div class="eyebrow">Contexte</div>
+        <h2 style="color:var(--forest); font-size:1.8rem;">Un fort potentiel, freiné par des défis structurels</h2>
+        <p style="color:var(--charcoal-60); font-size:16px;">Le Sud-Kivu dispose d'un climat favorable, de sols fertiles et d'une population majoritairement rurale. Mais la faible productivité, la dégradation des sols, l'insécurité alimentaire et le manque d'accès aux marchés freinent son potentiel.</p>
+        <p style="color:var(--charcoal-60); font-size:16px;">Un projet intégré agriculture-élevage crée des synergies vertueuses entre les deux filières.</p>
+      </div>
+      <div class="reveal loop-diagram">
+        <div class="loop-node">🌾 Cultures<span>Nourrissent les animaux</span></div>
+        <div class="loop-arrow">⇄</div>
+        <div class="loop-node" style="background:var(--wheat); color:var(--forest-deep);">🐄 Élevage<span style="color:rgba(31,61,43,0.7);">Fertilise les champs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dim">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Objectifs</div>
+      <h2>Quatre priorités pour les communautés rurales</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><h3>Sécurité alimentaire</h3><p>Améliorer l'alimentation et la nutrition des ménages ruraux.</p></div>
+      <div class="card reveal"><h3>Revenus diversifiés</h3><p>Accroître les revenus des producteurs par la diversification des activités.</p></div>
+      <div class="card reveal"><h3>Agroécologie</h3><p>Promouvoir des pratiques agricoles durables et respectueuses des sols.</p></div>
+      <div class="card reveal"><h3>Résilience climatique</h3><p>Renforcer la capacité des communautés à faire face aux changements climatiques.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Composantes du projet</div>
+      <h2>Une approche à six volets, du champ au marché</h2>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card reveal">
+        <span class="n">01 · Production végétale</span>
+        <h3>Cultures et fourrage</h3>
+        <ul>
+          <li>Vivrières : maïs, haricot, légumes, manioc, patate douce</li>
+          <li>Rente : café, thé, banane</li>
+          <li>Cultures fourragères pour l'alimentation animale</li>
+          <li>Compost, ensilage, transformation agroalimentaire</li>
+        </ul>
+      </div>
+      <div class="comp-card reveal">
+        <span class="n">02 · Élevage</span>
+        <h3>Bétail et volaille</h3>
+        <ul>
+          <li>Bovins pour le lait et la viande</li>
+          <li>Petits ruminants pour revenus rapides</li>
+          <li>Volaille pour œufs et viande</li>
+          <li>Races améliorées adaptées au climat local</li>
+        </ul>
+      </div>
+      <div class="comp-card reveal">
+        <span class="n">03 · Intégration</span>
+        <h3>Agriculture ↔ Élevage</h3>
+        <ul>
+          <li>Fumier utilisé pour fertiliser les champs</li>
+          <li>Résidus de récolte valorisés comme fourrage</li>
+          <li>Rotation cultures/pâturages pour préserver les sols</li>
+        </ul>
+      </div>
+      <div class="comp-card reveal">
+        <span class="n">04 · Transformation</span>
+        <h3>Commercialisation</h3>
+        <ul>
+          <li>Mini-laiteries locales</li>
+          <li>Coopératives de vente de produits agricoles et animaux</li>
+          <li>Formation en gestion et accès aux marchés</li>
+        </ul>
+      </div>
+      <div class="comp-card reveal">
+        <span class="n">05 · Capacités</span>
+        <h3>Formation et appui</h3>
+        <ul>
+          <li>Agroécologie, organisation, santé animale, gestion coopérative</li>
+          <li>Appui technique par agronomes et vétérinaires</li>
+          <li>Sensibilisation nutrition et hygiène</li>
+        </ul>
+      </div>
+      <div class="comp-card reveal" style="background:var(--forest); border:none;">
+        <span class="n" style="color:var(--wheat-light);">06 · Résultats attendus</span>
+        <h3 style="color:#fff;">En 3 ans</h3>
+        <ul>
+          <li style="color:rgba(255,255,255,0.7);">+30 à 40% de productivité agricole</li>
+          <li style="color:rgba(255,255,255,0.7);">Consommation de protéines animales améliorée</li>
+          <li style="color:rgba(255,255,255,0.7);">Emplois ruraux pour jeunes et femmes</li>
+          <li style="color:rgba(255,255,255,0.7);">Pauvreté réduite, résilience renforcée</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dim">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Impacts attendus après 3 ans</div>
+      <h2>Un changement mesurable dans les communautés</h2>
+    </div>
+    <div class="result-strip reveal">
+      <div class="card" style="text-align:center;"><div style="font-size:26px; margin-bottom:8px;">🌽</div><b style="color:var(--forest); font-family:var(--font-mono); display:block; margin-bottom:4px;">500+</b><span style="font-size:13px; color:var(--charcoal-60);">Ménages en agriculture intégrée maïs-haricot-fourrage</span></div>
+      <div class="card" style="text-align:center;"><div style="font-size:26px; margin-bottom:8px;">🩺</div><span style="font-size:13px; color:var(--charcoal-60);">Cliniques vétérinaires communautaires émergentes</span></div>
+      <div class="card" style="text-align:center;"><div style="font-size:26px; margin-bottom:8px;">🥛</div><span style="font-size:13px; color:var(--charcoal-60);">Mini-laiteries et unités de transformation locales</span></div>
+      <div class="card" style="text-align:center;"><div style="font-size:26px; margin-bottom:8px;">🌱</div><span style="font-size:13px; color:var(--charcoal-60);">Initiatives communautaires en expansion continue</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="budget-panel reveal" style="background: linear-gradient(135deg, var(--wheat), #a97e2c); border-radius:18px; padding:34px; color:var(--forest-deep); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:24px;">
+      <div>
+        <div class="eyebrow" style="color:rgba(31,61,43,0.6);">Investissement nécessaire</div>
+        <div style="font-family:var(--font-display); font-weight:700; font-size:42px;">60 000 $</div>
+        <div style="font-weight:600;">sur 3 ans · 500+ ménages bénéficiaires</div>
+      </div>
+      <a href="#don" class="btn" style="background:var(--forest); color:#fff;">Faire un don pour ce projet</a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-forest" id="don" style="text-align:center;">
+  <div class="section-inner">
+    <div class="eyebrow" style="justify-content:center;">Soutenir ce projet</div>
+    <h2 style="color:#fff; max-width:34ch; margin:0 auto 18px;">Votre don finance un modèle agricole intégré et durable</h2>
+    <p style="color:rgba(255,255,255,0.7); max-width:52ch; margin:0 auto 34px;">Cultures, élevage, transformation et formation — un cercle vertueux pour plus de 500 ménages du Sud-Kivu.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="../contact.html" class="btn btn-wheat">Faire un don</a>
+      <a href="../contact.html" class="btn btn-ghost" style="border-color: rgba(255,255,255,0.4); color:#fff;">Devenir partenaire</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="../assets/images/logo_emblem.png" alt="ODAPP">
+        <b>ODAPP ASBL</b>
+      </div>
+      <p style="font-size:14px; max-width:32ch; color:rgba(255,255,255,0.6);">Organisation de Développement Agro-Pastoral et Piscicole — Province du Sud-Kivu, RDC.</p>
+    </div>
+    <div>
+      <h5>Navigation</h5>
+      <a href="../index.html">Accueil</a>
+      <a href="../a-propos.html">À propos</a>
+      <a href="../projets.html">Projets</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+    <div>
+      <h5>Projets</h5>
+      <a href="../projets.html#urgence">Urgence</a>
+      <a href="../projets.html#impact-rapide">Impact rapide</a>
+      <a href="../projets.html#grands-projets">Grands projets</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a href="tel:+243856134626">+243 856 134 626</a>
+      <a href="mailto:contact@odapp.org">contact@odapp.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ODAPP ASBL. Tous droits réservés.</span>
+    <span>Agréée N° JUST.112/DP/SKV/CA/8007/2023 — Sud-Kivu, RDC</span>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
