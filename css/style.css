@@ -208,6 +208,14 @@ section{ padding: 90px var(--pad); }
 .bg-forest .section-head p{ color: rgba(255,255,255,0.7); }
 .bg-dim{ background: var(--paper-dim); }
 
+.prose h3{ color: var(--forest); font-size: 21px; margin: 40px 0 14px; }
+.prose h3:first-of-type{ margin-top:0; }
+.prose p{ color: var(--charcoal-60); font-size: 16px; line-height: 1.75; margin-bottom: 16px; max-width: 78ch; }
+.prose-list{ margin: 0 0 20px; }
+.prose-list li{ position:relative; padding-left: 24px; margin-bottom: 12px; color: var(--charcoal-60); font-size: 16px; line-height: 1.65; }
+.prose-list li::before{ content:""; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; background: var(--wheat); }
+.footnote{ font-size: 13px; color: var(--charcoal-30); }
+
 /* ---------- Cards ---------- */
 .grid{ display:grid; gap: 26px; }
 .grid-3{ grid-template-columns: repeat(3, 1fr); }
